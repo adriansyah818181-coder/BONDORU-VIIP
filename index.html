@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BONDORU VIP — Play Together. Level Up Together.</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+  <header class="topbar">
+    <a class="brand" href="#" data-page="home"><span class="brand-mark">B</span><span>BONDORU <b>VIP</b></span></a>
+    <nav id="mainNav">
+      <a href="#" data-page="home">Beranda</a><a href="#benefits" data-page="home">Layanan</a>
+      <a href="#" data-page="loyalty">Loyalty</a><a href="#" data-page="wdp">WDP</a>
+    </nav>
+    <div class="nav-actions" id="navActions">
+      <button class="btn btn-ghost" data-page="login">Masuk</button>
+      <button class="btn btn-primary" data-page="register">Gabung VIP</button>
+    </div>
+    <button class="menu-toggle" id="menuToggle" aria-label="Buka menu">☰</button>
+  </header>
+
+  <main>
+    <section class="page active" id="page-home">
+      <div class="hero wrap">
+        <div class="hero-copy">
+          <div class="eyebrow"><span class="live-dot"></span> MOBILE LEGENDS • MABAR COMMUNITY</div>
+          <h1>Play Together.<br><span>Level Up Together.</span></h1>
+          <p>Temukan teman mabar, susun strategi, dan naikkan level permainanmu bersama komunitas BONDORU VIP.</p>
+          <div class="hero-actions"><button class="btn btn-primary btn-large" data-page="register">GABUNG VIP <span>↗</span></button><button class="btn btn-outline btn-large" data-page="login">Masuk Member</button></div>
+          <div class="hero-meta"><span>✦ 5 role pilihan</span><span>✦ Loyalty points permanen</span><span>✦ Main bareng satu room</span></div>
+        </div>
+        <div class="hero-art">
+          <div class="orbit orbit-a"></div><div class="orbit orbit-b"></div>
+          <div class="hero-emblem"><span>B</span><small>VIP</small></div>
+          <div class="float-card card-top"><span class="mini-icon">⚡</span><div><b>TEAM UP</b><small>Find your squad</small></div></div>
+          <div class="float-card card-bottom"><span class="mini-icon blue">◆</span><div><b>LEVEL UP</b><small>Grow together</small></div></div>
+          <div class="art-caption">BONDORU <b>ARENA</b><span>EST. 2026</span></div>
+        </div>
+      </div>
+      <div class="wrap">
+        <div class="status-strip"><div><span class="live-dot"></span><b id="orderStatusText">ORDER STATUS: OPEN</b><small>Kesempatan mabar dimulai dari sini</small></div><button class="btn btn-primary" data-page="register">Mulai Sekarang</button></div>
+      </div>
+      <section class="section wrap" id="benefits">
+        <div class="section-heading"><div class="eyebrow">WHY BONDORU VIP</div><h2>Lebih dari sekadar <span>mabar.</span></h2><p>Semua yang kamu butuhkan untuk pengalaman bermain bareng.</p></div>
+        <div class="feature-grid">
+          <article class="feature"><div class="feature-icon">♟</div><h3>Squad Mabar</h3><p>Main bersama dalam satu room dengan host dan member lainnya.</p></article>
+          <article class="feature"><div class="feature-icon">✦</div><h3>Loyalty Points</h3><p>Kumpulkan poin dari transaksi dan naikkan level member.</p></article>
+          <article class="feature"><div class="feature-icon">◉</div><h3>WDP Event</h3><p>Kesempatan mengikuti event mingguan untuk member yang memenuhi syarat.</p></article>
+          <article class="feature"><div class="feature-icon">⌁</div><h3>Queue Transparan</h3><p>Pantau antrean, status panggilan, dan progres game dari dashboard.</p></article>
+        </div>
+      </section>
+      <section class="section roles-section"><div class="wrap"><div class="section-heading"><div class="eyebrow">CHOOSE YOUR LANE</div><h2>Find your <span>role.</span></h2><p>Pilih role favoritmu saat memesan mabar.</p></div><div class="role-grid"><div class="role">MID <b>01</b></div><div class="role">EXP <b>02</b></div><div class="role">JUNGLE <b>03</b></div><div class="role">ROAM <b>04</b></div><div class="role">GOLD LANE <b>05</b></div></div></div></section>
+      <section class="section wrap cta-section"><div><div class="eyebrow">YOUR SQUAD IS WAITING</div><h2>Siap naik level<br><span>bareng-bareng?</span></h2></div><button class="btn btn-primary btn-large" data-page="register">GABUNG VIP ↗</button></section>
+    </section>
+
+    <section class="page wrap auth-page" id="page-register">
+      <div class="auth-panel"><div class="eyebrow">CREATE YOUR ACCOUNT</div><h2>Gabung <span>BONDORU VIP.</span></h2><p class="muted">Buat akun dan mulai perjalanan mabar kamu.</p>
+        <form id="registerForm" class="form-grid">
+          <label>Nickname MLBB<input name="nickname" required placeholder="Contoh: BondoruPlayer"></label>
+          <label>MLBB ID<input name="mlid" required placeholder="12345678 (1234)"></label>
+          <label>Role favorit<select name="role"><option>Mid</option><option>EXP</option><option>Jungle</option><option>Roam</option><option>Gold Lane</option></select></label>
+          <label>WhatsApp atau Email<input name="contact" required placeholder="08xxx atau email@contoh.com"></label>
+          <label>Username<input name="username" required minlength="4" placeholder="Buat username"></label>
+          <label>Password<input name="password" type="password" required minlength="6" placeholder="Minimal 6 karakter"></label>
+          <label class="checkline full"><input type="checkbox" required> Saya menyetujui syarat dan ketentuan BONDORU VIP.</label>
+          <button class="btn btn-primary full" type="submit">BUAT AKUN</button>
+        </form><p class="auth-switch">Sudah punya akun? <a href="#" data-page="login">Masuk di sini</a></p>
+      </div>
+    </section>
+
+    <section class="page wrap auth-page" id="page-login">
+      <div class="auth-panel narrow"><div class="eyebrow">MEMBER ACCESS</div><h2>Welcome <span>back.</span></h2><p class="muted">Masuk ke akun BONDORU VIP kamu.</p>
+        <form id="loginForm" class="form-grid single"><label>Username<input name="username" required placeholder="Username"></label><label>Password<input name="password" type="password" required placeholder="Password"></label><button class="btn btn-primary full" type="submit">MASUK</button></form>
+        <div class="demo-note">Demo admin: <b>admin</b> / <b>admin123</b><br>Demo member: daftar akun baru melalui halaman registrasi.</div>
+        <p class="auth-switch">Belum punya akun? <a href="#" data-page="register">Daftar sekarang</a></p>
+      </div>
+    </section>
+
+    <section class="page wrap app-page" id="page-dashboard">
+      <div class="page-heading"><div><div class="eyebrow">MEMBER AREA</div><h2>Dashboard <span>Member.</span></h2><p class="muted" id="welcomeText">Selamat datang kembali.</p></div><button class="btn btn-outline" id="logoutBtn">Keluar</button></div>
+      <div class="stats-grid"><div class="stat-card"><small>SISA GAME</small><strong id="balanceStat">0</strong><span>Game tersedia</span></div><div class="stat-card"><small>LOYALTY POINTS</small><strong id="pointsStat">0</strong><span id="levelStat">Bronze Member</span></div><div class="stat-card"><small>STATUS ANTREAN</small><strong id="queueStat">—</strong><span id="queueSub">Belum ada antrean</span></div></div>
+      <div class="dashboard-grid"><div class="panel"><div class="panel-head"><div><div class="eyebrow">LIVE QUEUE</div><h3>Status Antrean</h3></div><span class="pill pill-blue" id="queuePill">NO QUEUE</span></div><div id="queueDetails" class="empty-state">Kamu belum memiliki antrean aktif. Pesan game untuk mulai mabar.</div><button class="btn btn-primary" data-page="order">PESAN MABAR</button></div>
+      <div class="panel"><div class="eyebrow">QUICK ACCESS</div><h3>Member Menu</h3><div class="menu-list"><button data-page="order">＋ Pesan Mabar <span>→</span></button><button data-page="loyalty">✦ Loyalty Points <span>→</span></button><button data-page="wdp">◉ WDP Event <span>→</span></button><button data-page="history">▤ Riwayat Transaksi <span>→</span></button></div></div></div>
+    </section>
+
+    <section class="page wrap app-page" id="page-order">
+      <div class="page-heading"><div><div class="eyebrow">BOOK YOUR SESSION</div><h2>Pesan <span>Mabar.</span></h2><p class="muted">Tentukan jumlah game dan role favoritmu.</p></div><button class="btn btn-outline" data-page="dashboard">← Dashboard</button></div>
+      <div class="order-layout"><div class="panel"><form id="orderForm"><label>Jumlah game<div class="quantity"><button type="button" id="minusQty">−</button><strong id="qtyValue">1</strong><button type="button" id="plusQty">+</button></div></label><label>Role pilihan<select id="orderRole"><option>Mid</option><option>EXP</option><option>Jungle</option><option>Roam</option><option>Gold Lane</option><option>Bebas / menyesuaikan</option></select></label><div class="notice">Role merupakan preferensi. Penyesuaian dapat dilakukan oleh host sesuai kebutuhan tim.</div><label class="checkline"><input type="checkbox" id="agreeTerms"> Saya paham game berlaku 1 bulan sejak pembayaran berhasil dan transaksi yang sudah dibayar tidak dapat di-refund.</label><button type="submit" class="btn btn-primary full">LANJUT KE PEMBAYARAN</button></form></div>
+      <div class="panel summary"><div class="eyebrow">ORDER SUMMARY</div><h3>Ringkasan Pesanan</h3><div class="summary-row"><span>Jumlah game</span><b id="summaryQty">1 game</b></div><div class="summary-row"><span>Harga per game</span><b id="unitPrice">Atur admin</b></div><div class="summary-row total"><span>Total pembayaran</span><b id="orderTotal">Belum ditentukan</b></div><p class="muted small">Harga ditampilkan mengikuti pengaturan admin. Pembayaran QRIS otomatis memerlukan integrasi payment gateway.</p></div></div>
+    </section>
+
+    <section class="page wrap app-page" id="page-loyalty"><div class="page-heading"><div><div class="eyebrow">LOYALTY PROGRAM</div><h2>Loyalty <span>Points.</span></h2><p class="muted">Setiap Rp1.000 transaksi sukses menghasilkan 1 poin.</p></div><button class="btn btn-outline" data-page="dashboard">← Dashboard</button></div><div class="panel"><div class="eyebrow">YOUR PROGRESS</div><h3><span id="loyaltyPoints">0</span> Points</h3><div class="level-list"><div>Bronze <b>0–99</b></div><div>Silver <b>100–249</b></div><div>Gold <b>250–499</b></div><div>Platinum <b>500–999</b></div><div>Diamond <b>1.000+</b></div></div><p class="muted small">Poin bersifat permanen dan tidak hangus. Level mengikuti total poin yang terkumpul.</p></div></section>
+
+    <section class="page wrap app-page" id="page-wdp"><div class="page-heading"><div><div class="eyebrow">WEEKLY EVENT</div><h2>WDP <span>Event.</span></h2><p class="muted">Event mingguan untuk member aktif.</p></div><button class="btn btn-outline" data-page="dashboard">← Dashboard</button></div><div class="panel wdp-panel"><div class="wdp-symbol">◉</div><div><div class="eyebrow">EVERY SUNDAY</div><h3>Weekly Diamond Pass Draw</h3><p>Syarat mengikuti spin: memiliki minimal satu order berhasil dalam 7 hari terakhir. Setiap member mendapatkan satu kesempatan spin.</p><span class="pill pill-blue">MAKS. 3 PEMENANG / EVENT NORMAL</span></div></div></section>
+
+    <section class="page wrap app-page" id="page-history"><div class="page-heading"><div><div class="eyebrow">YOUR ACTIVITY</div><h2>Riwayat <span>Transaksi.</span></h2></div><button class="btn btn-outline" data-page="dashboard">← Dashboard</button></div><div class="panel"><div id="historyList" class="empty-state">Belum ada transaksi.</div></div></section>
+
+    <section class="page wrap app-page" id="page-admin"><div class="page-heading"><div><div class="eyebrow">CONTROL CENTER</div><h2>Admin <span>Dashboard.</span></h2><p class="muted">Kelola pengaturan demo BONDORU VIP.</p></div><button class="btn btn-outline" id="adminLogout">Keluar</button></div>
+      <div class="stats-grid"><div class="stat-card"><small>TOTAL MEMBER</small><strong id="adminMembers">0</strong></div><div class="stat-card"><small>ORDER DEMO</small><strong id="adminOrders">0</strong></div><div class="stat-card"><small>ORDER STATUS</small><strong id="adminStatus">OPEN</strong></div></div>
+      <div class="admin-grid"><div class="panel"><div class="eyebrow">SYSTEM SETTINGS</div><h3>Pengaturan Website</h3><label>Harga per game (Rp)<input id="priceInput" type="number" min="0" step="1000"></label><label>Status order<select id="statusInput"><option value="open">OPEN</option><option value="closed">CLOSED</option></select></label><button class="btn btn-primary" id="saveSettings">SIMPAN PENGATURAN</button></div><div class="panel"><div class="eyebrow">MEMBER LIST</div><h3>Daftar Member</h3><div id="adminMemberList" class="admin-member-list"></div></div></div>
+      <div class="panel admin-orders"><div class="eyebrow">ORDER MANAGEMENT</div><h3>Pesanan Member</h3><div id="adminOrderList" class="empty-state">Belum ada pesanan.</div></div>
+    </section>
+  </main>
+  <footer><div class="wrap footer-inner"><a class="brand" href="#" data-page="home"><span class="brand-mark">B</span><span>BONDORU <b>VIP</b></span></a><small>© 2026 BONDORU VIP. Play Together. Level Up Together.</small><small>Demo website — belum terhubung ke payment gateway.</small></div></footer>
+  <div class="toast" id="toast"></div>
+  <script src="script.js"></script>
+</body>
+</html>
